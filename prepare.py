@@ -5,7 +5,6 @@ import nltk
 from nltk.tokenize.toktok import ToktokTokenizer
 from nltk.corpus import stopwords
 import pandas as pd
-import repositiories 
 
 def basic_clean(string):
     '''
