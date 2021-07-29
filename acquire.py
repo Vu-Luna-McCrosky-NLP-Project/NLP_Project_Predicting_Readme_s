@@ -20,6 +20,46 @@ from env import github_token, github_username
 # TODO: Add your github username to your env.py file under the variable `github_username`
 # TODO: Add more repositories to the `REPOS` list below.
 
+def get_repo_list():
+    '''
+    This function is designed to create a repo list from the most starred 
+    repositories on github.
+    
+    The function loops through 20 pages with 10 results per page of the most 
+    starred repos on github using a range from 1 to 21.
+    
+    It then uses another loop to pull out all the titles of each repo using 
+    the beautiful soup library and html per page.
+    '''
+    ## setting up authentication headers
+    headers = {"Authorization": f"token {github_token}", "User-Agent": github_username}
+    
+    ## initializing blank list for appending the repo's pulled
+    repo_list = []
+    clean_repo_list = []
+    
+    ## creating a list with a range of 1 to 21 to loop through 20 pages x being the 
+    ## page number in the url
+    for x in range(1,21):
+        response = requests.get(f'https://github.com/search?p={x}&q=stars%3A%3E0&s=stars&type=Repositories', 
+                                headers = headers)
+        html = response.content
+        soup = bs4.BeautifulSoup(html, 'html.parser')
+        
+        title = soup.find_all(class_= 'v-align-middle') ## <-- where the repo titles lie in html
+        time.sleep(15)
+        
+        ## looping through the string to append a list of repo titles
+        for y in title:
+            repo_list.append(y.get_text())
+        
+    ## looping through the repo list again to remove any null elements or white space
+    for repo in repo_list:
+        if (len(repo)) > 3:
+            clean_repo_list.append(repo)     
+        
+    return clean_repo_list  
+
 REPOS = [
     'freeCodeCamp/freeCodeCamp',
  '996icu/996.ICU',
