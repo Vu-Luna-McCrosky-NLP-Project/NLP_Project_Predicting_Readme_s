@@ -10,6 +10,7 @@ import os
 import json
 from typing import Dict, List, Optional, Union, cast
 import requests
+import pandas as pd
 
 from env import github_token, github_username
 
@@ -338,3 +339,10 @@ def scrape_github_data() -> List[Dict[str, str]]:
 if __name__ == "__main__":
     data = scrape_github_data()
     json.dump(data, open("data2.json", "w"), indent=1)
+    
+    
+def get_github_data():
+    df = pd.read_csv('NLP_df.csv', index_col=0)
+    df = df.reset_index(drop=True)
+    df = df.drop_duplicates()
+    return df 
