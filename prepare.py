@@ -5,7 +5,6 @@ import nltk
 from nltk.tokenize.toktok import ToktokTokenizer
 from nltk.corpus import stopwords
 import pandas as pd
-import repositiories 
 
 def basic_clean(string):
     '''
@@ -18,9 +17,9 @@ def basic_clean(string):
     #normalize unicode characters
     string = unicodedata.normalize('NFKD', string)\
         .encode('ascii','ignore')\
-        .decode('utf-8')
-    #replace stuff that is not letter, number, whitespace, or single quote
-    string = re.sub(r"[^\w\s']", '', string).lower()
+        .decode('utf-8', 'ignore')
+    #replace stuff that is not letter, number, or whitespace
+    string = re.sub(r"[^\w\s]", '', string).lower()
     
     #return our basic clean string
     return string
@@ -99,11 +98,9 @@ def remove_stopwords(words, extra_words=[], exclude_words=[]):
 
 def prep_github_data(df, content, extra_words=[], exclude_words=[]):
     '''   
-    Will return the title, the original content, a clean content, stemmed content, and lemmatized content
+    Will return the original content, a clean content, stemmed content, and lemmatized content
     into a nice dataframe after taking in the data, its contents, and words to add or remove to stopword list
     '''
-    #title
-    df['title'] = df.title
     
     #original content
     df['original']= df[content]  
@@ -118,6 +115,21 @@ def prep_github_data(df, content, extra_words=[], exclude_words=[]):
     #lemmatized
     df['lemmatized'] = df['clean'].apply(lemmatize)
  
+    ############# 
+    
+    df['readme_length'] = df.clean.apply(len)
+    
+    df['word_count'] = df.clean.apply(str.split).apply(len)
+    
+    df = df[df['word_count'] >= 10]
+    
+    df["clean"]= df["clean"].str.replace("&#9;", "")
+    
+    df = df.reset_index(drop=True)
+    
+    
     
     #put it all together
-    return df[['title', 'original','clean','stemmed','lemmatized']] 
+    return df 
+
+
