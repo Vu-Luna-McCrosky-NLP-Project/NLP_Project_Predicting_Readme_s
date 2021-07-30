@@ -123,6 +123,8 @@ def prep_github_data(df, content, extra_words=[], exclude_words=[]):
     
     df = df[df['word_count'] >= 10]
     
+    df["clean"]= df["clean"].str.replace("&#9;", "")
+    
     df = df.reset_index(drop=True)
     
     
