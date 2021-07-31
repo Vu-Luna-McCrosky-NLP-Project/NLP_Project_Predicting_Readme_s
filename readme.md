@@ -1,6 +1,5 @@
 ![image](https://github.com/lupeluna/README_FILES/blob/main/NLP%20Project%20Predicting%20READMEs-3.gif)
 
-This Repository will be used for our Natural Language Processing Project
 
 by: Forrest McCrosky, Lupe Luna, Anna Vu
 
@@ -59,8 +58,8 @@ ___________________________
 
 > - **Hypothesis 2 -** 
 > - alpha = .05
-> - $H_o$: There is no association between conductivity and potability.
-> - $H_a$: There is an association between conductivity and potability.
+> - $H_o$: 
+> - $H_a$: 
 
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
