@@ -121,11 +121,11 @@ ___
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 
-### Reproduce My Project
+### Reproduce Our Project
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 
-You will need your own env file with database credentials along with all the necessary files listed below to run my final project notebook. 
+You will need your own env file with database credentials along with all the necessary files listed below to run our final project notebook. 
 - [X] Read this README.md
 - [ ] Download the aquire.py, prepare.py, and NLP_df.ipynb files into your working directory
 - [ ] Add your own env file to your directory. (user, password, host)
