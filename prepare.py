@@ -5,6 +5,7 @@ import nltk
 from nltk.tokenize.toktok import ToktokTokenizer
 from nltk.corpus import stopwords
 import pandas as pd
+from sklearn.model_selection import train_test_split
 
 def basic_clean(string):
     '''
@@ -20,7 +21,7 @@ def basic_clean(string):
         .decode('utf-8', 'ignore')
     #replace stuff that is not letter, number, or whitespace
     string = re.sub(r"[^\w\s]", '', string).lower()
-    
+    string = re.sub(r"[^a-z0-9'\s]", '', string)
     #return our basic clean string
     return string
 
@@ -133,3 +134,12 @@ def prep_github_data(df, content, extra_words=[], exclude_words=[]):
     return df 
 
 
+def split(df):
+    '''splitting our data, stratifying language.'''
+    train_validate, test = train_test_split(df, test_size=.2, 
+                                        random_state=123, 
+                                        stratify=df.language)
+    train, validate = train_test_split(train_validate, test_size=.3, 
+                                   random_state=123, 
+                                   stratify=train_validate.language)
+    return train, validate, test
