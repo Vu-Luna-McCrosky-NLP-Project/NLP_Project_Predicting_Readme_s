@@ -5,10 +5,54 @@ by: Forrest McCrosky, Lupe Luna, Anna Vu
 
 Hello,
 
-Welcome to the README file for our "NLP Project"
+Welcome to the README file for our [NLP Project](https://nbviewer.jupyter.org/github/Vu-Luna-McCrosky-NLP-Project/NLP_Project_Predicting_Readme_s/blob/master/final_nlp.ipynb) 
 
-Here, you will find our work on the NLP_df.csv file which contains Github repos that include the README contents.  You will also find the data dictionary to help offer more insight to the variables being used.  
+Here, you will find our work on the NLP_df.csv file which contains Github repos that include the README contents.  You will also find the data dictionary to help offer more insight to the variables being used.
+<br>
 
+## Table of Contents
+---
+
+A.   [Project Overview             ](#a-project-overview)
+1a.   [Project Description          ](#1-project-description)
+2a.   [Project Deliverables         ](#2-project-deliverables)
+
+B.  [Project Summary               ](#b-project-summary)
+1.   [Goals                        ](#1-goals)
+2.   [Initial Thoughts & Hypothesis](#2-hypothesis)
+3.   [Findings & Next Steps        ](#3-findings--next-steps)
+
+C. [Data Context                 ](#c-data-context)
+1.   [About the Pokedex Data        ](#1-about-the-pokedex-data)
+2.   [Data Dictionary              ](#2-data-dictionary)
+
+D.  [Pipeline                     ](#d-pipeline)
+1.   [Project Planning             ](#1-project-planning)
+2.   [Data Acquisition             ](#2-data-acquisition)
+3.   [Data Preparation             ](#3-data-preparation)
+4.   [Data Exploration             ](#4-data-exploration)
+5.   [Modeling & Evaluation        ](#5-modeling--evaluation)
+6.   [Product Delivery             ](#6-product-delivery)
+
+E.   [Modules                      ](#e-modules)
+
+F.  [Project Reproduction         ](#f-project-reproduction)
+
+
+## A. Project Overview
+---
+
+### 1a. Project Description
+We will be using natural language processing (NLP) to see if we can predict a Github repository's most common programming language, based off of its README contents. 
+<br>
+<br>
+
+### 2a. Project Deliverables
+ - Acquire, Prepare, and Explore Modules
+ - Final Notebook (a walkthrough with comments)
+ - Presentation Slides 
+ - This README 
+<br>
 _______________________
 
 ## Abstract
