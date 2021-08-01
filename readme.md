@@ -172,7 +172,7 @@ ___
 > - Visualize! 
 
 
-#### 5. Modeling and Evaluation
+#### 5. Modeling & Evaluation
 > - Establish a baseline accuracy 
 > - Fit using TD-IDF Vectorizer
 > - Evaluate decision tree, random forest, logistic regression, KNN, and Naive Bayes models
