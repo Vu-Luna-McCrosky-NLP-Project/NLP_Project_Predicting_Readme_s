@@ -124,7 +124,6 @@ Our data was acquired with web scraping. We scraped ~200 of the most starred rep
 
 ## D. Pipeline
 --- 
-<hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 
 ### Pipeline Stages Breakdown
 
