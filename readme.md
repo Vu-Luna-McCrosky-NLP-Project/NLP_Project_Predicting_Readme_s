@@ -14,8 +14,8 @@ Here, you will find our work on the NLP_df.csv file which contains Github repos 
 ---
 
 A.   [Project Overview             ](#a-project-overview)
-1a.   [Project Description          ](#1-project-description)
-2a.   [Project Deliverables         ](#2-project-deliverables)
+1.   [Project Description          ](#1-project-description)
+2.   [Project Deliverables         ](#2-project-deliverables)
 
 B.  [Project Summary               ](#b-project-summary)
 1.   [Goals                        ](#1-goals)
@@ -42,12 +42,13 @@ F.  [Project Reproduction         ](#f-project-reproduction)
 ## A. Project Overview
 ---
 
-### 1a. Project Description
+### 1. Project Description
 We will be using natural language processing (NLP) to see if we can predict a Github repository's most common programming language, based off of its README contents. 
 <br>
 <br>
 
-### 2a. Project Deliverables
+
+### 2. Project Deliverables
  - Acquire, Prepare, and Explore Modules
  - Final Notebook (a walkthrough with comments)
  - Presentation Slides 
