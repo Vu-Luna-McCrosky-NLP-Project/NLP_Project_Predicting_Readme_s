@@ -194,15 +194,12 @@ ___
 - prepare.py = contains preparation functions to filter and clean our data
 - explore.py = contains explore functions that will generate visualizations 
 
-<hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
-
 
 
 
 ## F. Project Reproduction
 --- 
 
-<hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 
 You will need your own env file with database credentials along with all the necessary files listed below to run our final project notebook. 
 - [X] Read this README.md
