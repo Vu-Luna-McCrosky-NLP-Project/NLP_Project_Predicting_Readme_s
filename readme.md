@@ -121,6 +121,21 @@ ___
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 
+### Data Dictionary
+
+| Column Name     | Description                                                         |
+|-----------------|---------------------------------------------------------------------|
+| repo            | the repository's given name                                         |
+| language *      | the repository's most used programming language                     |
+| readme_contents | the repository's readme contents                                    |
+| original        | the readme contents in its original state (same as readme_contents) |
+| clean           | lower cases string, removes special characters, and tokenizes       |
+| stemmed         | stems the clean content                                             |
+| lemmatized      | lemmatizes the clean content                                        |
+| readme_length   | character count of the clean readme length                          |
+| word_count      | the number of words in the clean readme contents                    |
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * Target variable
+
 ### Reproduce Our Project
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
@@ -130,3 +145,4 @@ You will need your own env file with database credentials along with all the nec
 - [ ] Download the aquire.py, prepare.py, and NLP_df.ipynb files into your working directory
 - [ ] Add your own env file to your directory. (user, password, host)
 - [ ] Run the final_nlp.ipynb notebook
+
