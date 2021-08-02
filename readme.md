@@ -193,6 +193,16 @@ Here is a quick summary of our results:
 
 
 
+| Model               | Train Score | Validate Score | Test Score |
+|---------------------|-------------|----------------|------------|
+| Decision Tree       | 79%         | 70%            | ---        |
+| Random Forest       | 51%         | 53%            | ---        |
+| Logistic Regression | 53%         | 53%            | ---        |
+| Naive Bayes         | 53%         | 53%            | ---        |
+| KNN                 | 87%         | 82%            | 82%        |
+
+
+
 #### 6. Product Delivery
 > - Deliver the findings in a Google Slide presentation.
 > - Have a completed final notebook with comments to explain the walkthrough of our process
