@@ -177,6 +177,19 @@ ___
 > - Evaluate decision tree, random forest, logistic regression, KNN, and Naive Bayes models
 > - Emphasize on beating the baseline accuracy, and overall accuracy of the model. 
 
+Here is a quick summary of our results:
+
+
+
+| Model               | Train Score | Validate Score | Test Score |
+|---------------------|-------------|----------------|------------|
+| Decision Tree       | 79.41%      | 70.59%         | ---        |
+| Random Forest       | 51.47%      | 52.92%         | ---        |
+| Logistic Regression | 52.94%      | 52.94%         | ---        |
+| Naive Bayes         | 52.94%      | 52.94%         | ---        |
+| KNN                 | 86.76%      | 82.35%         | 81.82%     |
+
+
 
 #### 6. Product Delivery
 > - Deliver the findings in a Google Slide presentation.
