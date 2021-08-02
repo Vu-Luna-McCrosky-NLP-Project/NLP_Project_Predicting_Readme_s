@@ -69,17 +69,18 @@ Our goal is to be able to succesfully acquire the data, and follow through with 
 
 ### 2.) Initial Thoughts & Hypothesis
 > - **Hypothesis 1 -** 
-> - XXXXXX
-> - $H_o$: XXXXX  
-> - $H_a$: XXXXX 
+> - Programming Language of Repository and its Character Count
+> - alpha = .05
+> - $H_o$: There is no difference in means of a particular language's repository character lengths and another's repository character lengths 
+> - $H_a$: There is a difference in means of a particular language's repository character lengths and another's repository character lengths  
 
 > - **Hypothesis 2 -** 
+> - Programming Language of Repository and its Word Counts
 > - alpha = .05
-> - $H_o$: 
-> - $H_a$: 
+> - $H_o$: There is no difference in means of a particular language's repository word counts and another's repository word counts
+> - $H_a$: There is a difference in means of a particular language's repository word counts and another's repository word counts
 
-XXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXTBC
+
 
 
 ### 3.) Findings & Next Steps
