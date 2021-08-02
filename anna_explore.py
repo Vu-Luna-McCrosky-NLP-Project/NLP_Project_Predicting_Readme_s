@@ -7,6 +7,10 @@ from PIL import Image
 
 
 def javascript_barh(word_counts):
+    '''
+    this function will take in a word_counts series, find the top 20 most common words and plot JavaScript vs
+    our other languages with respect to how often each language uses those words
+    '''
     plt.rc('font', size=18)
     word_counts.sort_values('all', ascending=False).head(20)[['javascript', 'python']].plot.barh(figsize=(18,10), color={"python": "blue", "javascript": "orange"})
     plt.title('JavaScript vs. Python Words')
@@ -28,6 +32,10 @@ def javascript_barh(word_counts):
     
     
 def python_barh(word_counts):
+    '''
+    this function will take in a word_counts series, find the top 20 most common words and plot Python vs
+    our other languages with respect to how often each language uses those words
+    '''
     plt.rc('font', size=18)
     word_counts.sort_values('all', ascending=False).head(20)[['javascript', 'python']].plot.barh(figsize=(18,10), color={"python": "blue", "javascript": "orange"})
     plt.title('JavaScript vs. Python Words')
@@ -46,7 +54,12 @@ def python_barh(word_counts):
     plt.xlabel('\nFrequency')
     plt.show()
     
+    
 def java_barh(word_counts):
+    '''
+    this function will take in a word_counts series, find the top 20 most common words and plot Java vs
+    our other languages with respect to how often each language uses those words
+    '''
     
     plt.rc('font', size=18)
     word_counts.sort_values('all', ascending=False).head(20)[['java', 'javascript']].plot.barh(figsize=(18,10), color={"java": "brown", "javascript": "orange"})
@@ -66,7 +79,12 @@ def java_barh(word_counts):
     plt.xlabel('\nFrequency')
     plt.show()
     
+    
 def go_barh(word_counts):
+    '''
+    this function will take in a word_counts series, find the top 20 most common words and plot Go vs
+    our other languages with respect to how often each language uses those words
+    '''
     
     plt.rc('font', size=18)
     word_counts.sort_values('all', ascending=False).head(20)[['go', 'javascript']].plot.barh(figsize=(18,10), color={"go": "aqua", "javascript": "orange"})
@@ -86,7 +104,11 @@ def go_barh(word_counts):
     plt.xlabel('\nFrequency')
     plt.show()
     
+    
 def simple_wordcloud(language):
+    '''
+    this function will generate a wordcloud (single words only) based on the target language inputted
+    '''
     img = WordCloud(background_color='white', colormap = 'ocean', width=800, height=600).generate(language)
     plt.figure(figsize=(12,6))
     plt.imshow(img)
@@ -94,6 +116,9 @@ def simple_wordcloud(language):
     plt.show()
     
 def simple_wordclouds(language_words):
+    '''
+    this function will print out all of the simple word clouds
+    '''
     print('JavaScript, Python, Java, and Go Wordclouds (single words)')
     for i in language_words:
         simple_wordcloud(i)
