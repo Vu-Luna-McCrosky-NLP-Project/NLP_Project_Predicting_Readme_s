@@ -81,6 +81,7 @@ Our goal is to be able to succesfully acquire the data, and follow through with 
 > - $H_a$: There is a difference in means of a particular language's repository word counts and another's repository word counts
 
 
+We also hope to find that there are unique key words between the programming languages and its READMEs that will help our model predict accurately. 
 
 
 ### 3.) Findings & Next Steps
