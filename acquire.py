@@ -11,6 +11,8 @@ import json
 from typing import Dict, List, Optional, Union, cast
 import requests
 import pandas as pd
+import bs4
+import time
 
 from env import github_token, github_username
 
@@ -342,6 +344,10 @@ if __name__ == "__main__":
     
     
 def get_github_data():
+    '''
+    this function will bring in our NLP_df.csv into a pandas dataframe. 
+    it will also drop any duplicates, and reset the index
+    '''
     df = pd.read_csv('NLP_df.csv', index_col=0)
     df = df.reset_index(drop=True)
     df = df.drop_duplicates()
