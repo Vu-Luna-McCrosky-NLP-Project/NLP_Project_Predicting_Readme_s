@@ -116,16 +116,21 @@ def prep_github_data(df, content, extra_words=[], exclude_words=[]):
     #lemmatized
     df['lemmatized'] = df['clean'].apply(lemmatize)
  
-    ############# 
+    ############# additional features/drops
     
+    #make a character count column
     df['readme_length'] = df.clean.apply(len)
     
+    #make a word count column
     df['word_count'] = df.clean.apply(str.split).apply(len)
     
+    #drop repos with word counts with 10 or less
     df = df[df['word_count'] >= 10]
     
+    #remove these
     df["clean"]= df["clean"].str.replace("&#9;", "")
     
+    #reset index
     df = df.reset_index(drop=True)
     
     
