@@ -193,13 +193,6 @@ Here is a quick summary of our results:
 
 
 
-| Model               | Train Score | Validate Score | Test Score |
-|---------------------|-------------|----------------|------------|
-| Decision Tree       | 79%         | 70%            | ---        |
-| Random Forest       | 51%         | 53%            | ---        |
-| Logistic Regression | 53%         | 53%            | ---        |
-| Naive Bayes         | 53%         | 53%            | ---        |
-| KNN                 | 87%         | 82%            | 82%        |
 
 
 
